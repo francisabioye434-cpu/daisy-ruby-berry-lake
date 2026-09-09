@@ -1,0 +1,1 @@
+function e(e,t){let n=t-1;if(!Number.isFinite(e)||!Number.isFinite(n)||n<=0)return 0;let r=1-e;return(n*e-r)/n}function t(t,n,r=.5){return Math.max(0,e(t,n)*r)}export{e as n,t};

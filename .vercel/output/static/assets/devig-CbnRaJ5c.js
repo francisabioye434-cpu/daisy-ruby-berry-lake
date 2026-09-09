@@ -1,0 +1,1 @@
+function e(e,t=`multiplicative`){let n=e.map(e=>e>1?1/e:0),r=n.reduce((e,t)=>e+t,0),i=r-1,a;if(t===`additive`){let e=n.length||1;a=n.map(t=>t-i/e);let t=a.map(e=>Math.max(0,e)),r=t.reduce((e,t)=>e+t,0);a=r>0?t.map(e=>e/r):t}else a=r>0?n.map(e=>e/r):n;return{fair:a,implied:n,overround:i,method:t}}function t(e){return e.reduce((e,t)=>e+(t>1?1/t:0),0)-1}export{t as n,e as t};

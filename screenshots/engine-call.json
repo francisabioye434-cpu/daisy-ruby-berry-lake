@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/engine?home=whu&away=cry",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fairline",
+      "hasCanvas": false,
+      "bodyTextLen": 2074,
+      "bodyTextHash": "e557bd05b1380a722746f43494bacb2a6d604d296dc887b260548c0baac6fb45",
+      "bodyTextPrefix": "Fairline Board Engine Kelly Devig Journal Educational model · no",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/engine-call.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fairline",
+      "hasCanvas": false,
+      "bodyTextLen": 2043,
+      "bodyTextHash": "acd0ee89cee6ac460510b7af263f6c0f5e78215a1635895d4aa015361f64f1ca",
+      "bodyTextPrefix": "Fairline DIXON–COLES ENGINE Match lab Expected goals from attack",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/engine-call-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/engine-call.json"
+}

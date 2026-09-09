@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fairline",
+      "hasCanvas": false,
+      "bodyTextLen": 8060,
+      "bodyTextHash": "c87d79b704a4573bea8800923f9b6615bce255e46797cedfea1093b432bee4df",
+      "bodyTextPrefix": "Fairline Screen Board Engine Record Journal Link Settings Instal",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/fairline-prod.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fairline",
+      "hasCanvas": false,
+      "bodyTextLen": 6756,
+      "bodyTextHash": "23fc9fdbfe613510330acd17247191c662addefdde1f76c1aed25bd60b7f32e5",
+      "bodyTextPrefix": "Fairline LIVE DESK · 66 LEAGUES · 18:07 UTC Today 38 in-play · 2",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/fairline-prod-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/fairline-prod.json"
+}

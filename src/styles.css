@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #07110c;
+  --color-surface: #0e1a14;
+  --color-subtle: #15241c;
+  --color-fg: #e8f0ea;
+  --color-muted: #8fa196;
+  --color-faint: #5f7367;
+  --color-border: #24352c;
+  --color-accent: #d5e4d6;
+  --color-accent-fg: #07110c;
+  --color-positive: #6fbf94;
+  --color-negative: #d4786e;
+  --color-warn: #c4b08a;
+
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+
+  --shadow-border: 0 0 0 1px rgba(242, 243, 241, 0.08);
+  --shadow-border-hover: 0 0 0 1px rgba(242, 243, 241, 0.14);
+  --shadow-lift: 0 18px 40px -28px rgba(0, 0, 0, 0.7);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    color-scheme: dark;
+  }
+
+  body {
+    min-height: 100dvh;
+    background:
+      radial-gradient(1200px 600px at 50% -10%, color-mix(in oklab, var(--color-positive) 14%, transparent), transparent 60%),
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 47px,
+        color-mix(in oklab, var(--color-positive) 8%, transparent) 47px,
+        color-mix(in oklab, var(--color-positive) 8%, transparent) 48px
+      ),
+      var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  :focus-visible {
+    outline: 2px solid color-mix(in oklab, var(--color-accent) 70%, transparent);
+    outline-offset: 2px;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  select {
+    color: var(--color-fg);
+    background-color: var(--color-subtle);
+    color-scheme: dark;
+  }
+
+  option {
+    background-color: var(--color-surface);
+    color: var(--color-fg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.hairline {
+  box-shadow: var(--shadow-border);
+}
+
+.hairline-hover:hover {
+  box-shadow: var(--shadow-border-hover);
+}

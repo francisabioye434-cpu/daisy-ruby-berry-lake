@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/?league=all&region=all&week=current",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fairline",
+      "hasCanvas": false,
+      "bodyTextLen": 4196,
+      "bodyTextHash": "cf5596f60f31fe08d397393d201f466eb9a05ae585e17a1d491b1c8cd44ee01c",
+      "bodyTextPrefix": "Fairline Board Engine Kelly Devig Journal Educational model · no",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fairline",
+      "hasCanvas": false,
+      "bodyTextLen": 4165,
+      "bodyTextHash": "fc95de079ea915164e56d7a059a21c8552dc287cd06f39d60c91d580c03bf3a9",
+      "bodyTextPrefix": "Fairline LIVE GAME WEEK · 47 LEAGUES This week. Every league. Fa",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
